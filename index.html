@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+<body>
+
+
+  <!-- Nabar Header Responsive -->
+<div class="nav">
+  <input type="checkbox" id="nav-check">
+  <div class="nav-header">
+    <div class="nav-title" style="font-family: 'Beth Ellen', cursive;">
+      ShoesY
+    </div>
+  </div>
+  
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html" >Contact</a>
+  </div>
+</div>
+<!-- end of responsive header -->
+
+
+
+<!-- Content -->
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="images/slide3.jpg" style="width:100%" height="500px">
+  </div>
+  <div class="mySlides fade">
+    <img src="images/slide2.jpg" style="width:100%" height="500px">
+  </div>
+  <div class="mySlides fade">
+    <img src="images/slide1.jpg" style="width:100%" height="500px">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<!-- End of Carousel -->
+
+
+
+<!-- Qualities -->
+<div><h2><center>Important Features of Shoes in <span style="font-family: 'Beth Ellen', cursive;">ShoesY</span></center></h2></div>
+
+
+<ol style="--length: 5" role="list">
+
+    <div class="flex-container">
+      <div class="flex-item-left">
+         <li style="--i: 7">
+        <h3>Comfort</h3>
+        <p>Shoes should be comfortable to wear, especially if you plan to wear them for extended periods of time. Cushioning, arch support, and breathable materials can all contribute to a comfortable shoe.</p>
+      </li>
+      </div>
+      <div class="flex-item-right">
+         <li style="--i: 8">
+        <h3>Style</h3>
+        <p>Shoes come in a wide variety of styles, from casual to formal. Highlighting the unique style of each shoe can help customers find the perfect pair for their needs.</p>
+      </li>
+      </div>
+    </div>
+
+     <div class="flex-container">
+      <div class="flex-item-left">
+        <li style="--i: 9">
+        <h3>Durability</h3>
+        <p>Shoes should be made from high-quality materials that can withstand wear and tear. Customers want to know that their shoes will last, even with frequent use.</p>
+      </li>
+      </div>
+      <div class="flex-item-right">
+         <li style="--i: 10">
+        <h3>Fit</h3>
+        <p>Shoes should fit properly in order to provide the best support and comfort. Offering a range of sizes and widths can help customers find the perfect fit.</p>
+      </li>
+      </div>
+    </div>
+
+    <div class="flex-container">
+      <div class="flex-item-left">
+        <li style="--i: 5">
+        <h3>Traction</h3>
+        <p>Shoes should provide good traction to prevent slipping and falling. This is especially important for outdoor activities or for shoes worn in wet or slippery environments.</p>
+      </li>
+      </div>
+      <div class="flex-item-right">
+         <li style="--i: 6">
+        <h3>Breathability</h3>
+        <p>Shoes should allow air to circulate in order to prevent sweating and odors. This is especially important for athletic shoes and shoes worn in warm weather.</p>
+      </li>
+      </div>
+    </div>
+    </ol>
+
+
+<!-- End of Section -->
+
+<div class="satisfaction">
+
+  <h3>Your satisfaction is our top priority.</h3>
+   <p>We are committed to providing excellent service and ensuring your complete satisfaction.</p>
+
+</div>
+<!-- footer -->
+
+      <footer class="footer-distributed"  style="margin-top: 50px;">
+
+      <div class="footer-right">
+
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
+
+      </div>
+
+      <div class="footer-left">
+         <p class="footer-links">
+          <a class="link-1" href="#">Home</a>
+             <a href="about.html">About</a>
+           <a href="services.html">Services</a>
+           <a href="blog.html">Blog</a>
+           <a href="contact.html">Contact</a>
+        </p>
+
+        <p>ShoesY &copy; 2023</p>
+      </div>
+
+    </footer>
+
+</body>
+</html>
+
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
